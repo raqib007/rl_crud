@@ -66,7 +66,7 @@ class UpdateProduct extends Component {
                         <div className="form-group">
                             <label name="product_body">Product Body</label>
                             <textarea className="form-control"
-                                      onChange={this.handleChange2} value={this.state.body}></textarea>
+                                      onChange={this.handleChange2} value={this.state.body} rows="5"></textarea>
                         </div>
                         <div className="form-group">
                             <button className="btn btn-primary">Update</button>

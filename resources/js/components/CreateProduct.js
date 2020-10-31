@@ -49,7 +49,7 @@ class CreateProduct extends Component {
                             <div className="col-md-12">
                                 <div className="form-group">
                                     <label>Product Body:</label>
-                                    <textarea className="form-control" onChange={this.handleChange2}></textarea>
+                                    <textarea className="form-control" onChange={this.handleChange2} rows="5"></textarea>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,15 @@
+
+.navbar-nav > li > a:hover {
+    text-decoration: none;
+}
+
+.navbar-nav > li {
+    margin: 0 10px 0 10px;
+}
+
+.navbar-nav> li > .active{
+    color:white;
+    font-weight: bold;
+}
+
+

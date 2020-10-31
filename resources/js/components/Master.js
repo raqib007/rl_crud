@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
+import './pages_css/master.css';
 
 class Master extends Component {
     render(){
         return (
-            <div className="container">
+            <React.Fragment>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -15,7 +16,7 @@ class Master extends Component {
                         <a className="navbar-brand" href="#">DOOM</a>
                         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li >
-                                <NavLink className="nav-item" activeClassName="active" to={"/"}>Home</NavLink>
+                                <NavLink exact className="nav-item" activeClassName="active" to={"/"}>Home</NavLink>
                             </li>
                             <li >
                                 <NavLink className="nav-item" activeClassName="active" to={"add-item"}>Create Product</NavLink>
@@ -29,7 +30,7 @@ class Master extends Component {
                 <div className="pt-4">
                     {this.props.children}
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }
